@@ -1,0 +1,131 @@
+body{
+ padding:0px;
+ margin:0px;
+  font-family: Flaticon;
+  letter-spacing: 2px;
+}
+#background{
+	z-index:-10;
+}
+#container{
+	width:100%;
+	//background-color:rgb(150,225,150);
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:white;
+	z-index:2;
+	
+}
+input{
+font-family: Flaticon;
+  letter-spacing: 2px;
+}
+.buyButton{
+	font-size:2em;
+	height:30px;
+}
+#topMenu{
+	 height:8vh;
+	 text-align:center;
+	 font-size:2em;
+}
+.mainPart{
+ float:left;
+ width:33.3%;
+ height:92vh;
+//background-color:rgb(150,150,225);
+ //padding:20px;
+}
+.innerPart{
+height:100%;
+width:90%;
+padding: 10px;
+}
+.planetInfo, .shipInfo{
+	border: 1px solid white;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+// ----------------------------- SPECIAL FONT START
+@font-face {
+	font-family: "SpaceText";
+	src: url("wlmcarton.eot");
+	src: url("wlmcarton.eot#iefix") format("embedded-opentype"),
+	url("wlmcarton.woff") format("woff"),
+	url("wlmcarton.ttf") format("truetype"),
+	url("wlmcarton.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// ----------------------------- SPECIAL FONT END
+
+
+
+
+
+// ----------------------------- STARS BACKGOUND START 
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(img/stars2.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(img/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+// ----------------------------- STARS BACKGOUND END

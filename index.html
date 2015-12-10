@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="description" content="New Project" />
+  <meta name="keywords" content="New Project" />
+<title>Space</title>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="css.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="functions.js"></script>
+ <link href="favicon.ico" rel="icon" type="image/png" />
+ <link rel="stylesheet" type="text/css" href="font/wlmcarton.css"> 
+</head>
+<body onload="onload()">
+<div id="background">
+<div class="stars"></div>
+<div class="twinkling"></div>
+</div>
+
+<div id="container">
+<div id="topMenu">Score:<label id="scoreLabel">20 000</label></div>
+<div class="mainPart"><div class="innerPart"><h1>Planets</h1>
+	<div class ="planetInfo">
+		<h2>Moon</h2>
+	</div>
+	<div class ="planetInfo">
+		<h2>Mars</h2>
+	</div>
+
+</div></div>
+<div class="mainPart"><div class="innerPart"><h1>Spaceships</h1>
+	<div class="shipInfo">
+		<h2>Exploration Probe</h2> 
+		Owned: <label id="owned_ship_1" > 0</label> <br>
+		<input type="button" class="buyButton" value="Buy" name="ship_1" onclick="buyShip(this)">
+		
+	</div>
+
+</div></div>
+<div class="mainPart"><div class="innerPart"><h1>Upgrades</h1>
+
+
+
+</div></div>
+</div>
+</body>
+</html>
